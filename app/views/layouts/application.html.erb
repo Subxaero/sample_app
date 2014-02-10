@@ -8,8 +8,30 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<header class="header">
+	<a href="/vik"><span class="logo">Вик-Медиа</span></a>
+<div class="tel"> задайте свой вопрос по телефону<br /><span>8-800<span> 100-17-44</span></span></div>
+<div class="adr">центральный офис: 
+	<span><a href="./contacts.php" style="text-decoration: none; color: #9b000f !important;" >Москва<br />пер. Старопименовский, д. 11/6 стр. 3</a></span>
+</div>
+<a href="../feedback/" class="orderLink fancybox.ajax" >&nbsp;&nbsp;Напишите нам&nbsp;&nbsp;</a>
+</header>
+<section class="content">
+	<%= yield %>
+</section>
+<footer class="footer">
+	<div class="footerIn">
+		<div class="copy">
+			<p>&copy; ООО Холдинг "Вик-Медиа"</p>
+ 			<p>1995-2014</p>
+ 		</div>
+ 		<div class="adr">
+			Россия, г. Москва, <br/>пер. Старопименовский д. 11/6
+		</div>
+		<div class="counters">
+			WEB подразделение<br />ООО Холдинга &quot;Вик-Медиа&quot;
+		</div>
+	</div>
+</footer>
 </body>
 </html>
