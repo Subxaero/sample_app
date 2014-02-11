@@ -1,1 +1,50 @@
-<h1><%= @text_content %></h1>
+<%
+if @error_404 == 1 then
+%>
+	<h1>Ошибка 404</h1>
+	<p>Запрошенная Вами страница не найдена</p>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<%
+else
+	if @table_view = 1 then
+%>
+		<h1>&nbsp;&nbsp;&nbsp;&nbsp;<%= @page_header %></h1>
+		<br/> 
+		<table> 
+ 		 <tbody> 
+ 		   <tr>
+				<td style="text-align: center; width: 300px;">
+				<a href="<%= @href_top_1 %>" target="_blank"><img src="<%= @img_top_1 %>" width="200px"/></a>
+				</td>
+				<td style="text-align: center; width: 300px;">
+				<a href="<%= @href_top_2 %>" target="_blank"><img src="<%= @img_top_2 %>" width="200px"/></a>
+				</td>
+				<td style="text-align: center; width: 300px;">
+				<a href="<%= @href_top_3 %>" target="_blank"><img src="<%= @img_top_3 %>" width="200px"/></a>
+				</td>
+			</tr>
+  		  	<tr>
+				<td style="text-align: center; width: 300px;"><a href="<%= @href_top_1 %>" target="_blank"><%= @href_name_top_1.html_safe %></a></td>
+				<td style="text-align: center; width: 300px;"><a href="<%= @href_top_2 %>" target="_blank"><%= @href_name_top_2.html_safe %></a></td>
+				<td style="text-align: center; width: 300px;"><a href="<%= @href_top_3 %>" target="_blank"><%= @href_name_top_3.html_safe %></a></td>
+			</tr>
+ 		</tbody>
+ 		</table>
+		<h2><br/></h2>
+		<%= @main_content.html_safe %>
+		<table> 
+ 		 <tbody> 
+   		 <tr>
+   		 	<td colspan="2" style="text-align: center;"><a href="<%= @href_bottom %>" target="_blank"><img src="<%= @img_bottom %>"/></a></td>
+   		 	<td style="text-align: left; padding-left: 45px;"><%= @text_bottom.html_safe %></td>
+   		 </tr>
+		<tr>
+			<td style="text-align: center;"><a href="<%= @href_bottom %>" target="_blank"><%= @href_name_bottom %></a></td>
+		</tr>
+  		 </tbody>
+		</table> 
+<%
+	else
+	end
+end
+%>

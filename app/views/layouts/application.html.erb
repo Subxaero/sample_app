@@ -18,13 +18,13 @@
 <a href="../feedback/" class="orderLink fancybox.ajax" >&nbsp;&nbsp;Напишите нам&nbsp;&nbsp;</a>
 <nav>
 	<ul>
-			<li class="current"><a href="/index">Главная</a></li>
-			<li ><a href="/main">О компании</a></li>
-			<li ><a href="/estrabota">Есть Работа!</a></li>
-			<li ><a href="/metro">METRO</a></li>
-			<li ><a href="/mebelinterior">Мебель&Интерьер</a></li>
-			<li ><a href="/investtowest">Invest to West</a></li>
-			<li ><a href="/property">Собственность</a></li>
+			<li <% if @page_name == "index" then %>class="current"<% end %> ><a href="/index">Главная</a></li>
+			<li <% if @page_name == "main" then %>class="current"<% end %> ><a href="/main">О компании</a></li>
+			<li <% if @page_name == "estrabota" then %>class="current"<% end %> ><a href="/estrabota">Есть Работа!</a></li>
+			<li <% if @page_name == "metro" then %>class="current"<% end %> ><a href="/metro">METRO</a></li>
+			<li <% if @page_name == "mebelinterior" then %>class="current"<% end %> ><a href="/mebelinterior">Мебель&Интерьер</a></li>
+			<li <% if @page_name == "investtowest" then %>class="current"<% end %> ><a href="/investtowest">Invest to West</a></li>
+			<li <% if @page_name == "property" then %>class="current"<% end %> ><a href="/property">Собственность</a></li>
 		</ul>
 </nav>
 </header>

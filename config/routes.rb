@@ -1,5 +1,6 @@
 SampleApp::Application.routes.draw do
   get ':page' => "static_pages#index", :as => 'page'
+  get '' => redirect('/index')
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
