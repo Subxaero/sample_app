@@ -1,10 +1,11 @@
 class StaticPagesController < ApplicationController
-  def home
+  def index
+  	if params[:page]
+  		@text_content = params[:page]
+  	else
+  		redirect('/index')
+  	end
+
   end
 
-  def help
-  end
-
-  def about
-  end
 end

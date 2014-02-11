@@ -9,7 +9,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 
 /* Site styles */
 /*html {background:#ededed url('/bitrix/templates/lawyers/i/bg-top.png') repeat-x 0 0;}*/
-body {font:12px Arial, Helvetica, sans-serif;color:#404040;background:url('/bitrix/templates/lawyers/i/bg-middle.png') repeat-y 50% 0;min-width:1024px;}
+body {font:12px Arial, Helvetica, sans-serif;color:#404040;background:url('/images/bg-middle.png') repeat-y 50% 0;min-width:1024px;}
 a {text-decoration:underline;color:#0000ff;}
 a:hover {text-decoration:none;}
 a img {border: 2px solid transparent; /* Рамка вокруг изображения-ссылки */}
@@ -25,8 +25,8 @@ a:hover img  {border: 2px solid #f26522; /* Рамка при наведении
 .lt-ie8 .container {zoom:1;}
 
 /* Header */
-.header {position:relative;height:144px;background:url('/bitrix/templates/lawyers/i/header.png') repeat-x 0 102px;margin:0 0 30px;}
-	.logo {position:absolute;top:30px;left:29px;width:186px;height:48px;background:url('/bitrix/templates/lawyers/i/logo.png') no-repeat 0 0;overflow:hidden;text-indent:-10000px;}
+.header {position:relative;height:144px;background:url('/images/header.png') repeat-x 0 102px;margin:0 0 30px;}
+	.logo {position:absolute;top:30px;left:29px;width:186px;height:48px;background:url('/images/logo.png') no-repeat 0 0;overflow:hidden;text-indent:-10000px;}
 	.header .tel {position:absolute;top:26px;left:260px;color:#9b000f;font:11px Arial, Helvetica, sans-serif;}
 		.header .tel>span {display:block;font:18px Arial, Helvetica, sans-serif;}
 		.header .tel>span span {font:30px/34px Arial, Helvetica, sans-serif;}
@@ -38,55 +38,11 @@ a:hover img  {border: 2px solid #f26522; /* Рамка при наведении
 	a.orderLink {position:absolute;top:41px;right:26px;background:#fe6502;color:#fff;font:20px/40px Arial, Helvetica, sans-serif;display:block;text-decoration:none;padding:0 20px;border-radius:2px;box-shadow:inset 0 -1px 1px rgba(0,0,0,0.25);text-shadow:0 1px 1px rgba(32,59,0,0.4);}
 a.orderLink:hover{background:#9b000f;}
 	.header nav {position:absolute;top:102px;left:15px;font:18px/42px Arial, Helvetica, sans-serif;}
-		.header nav li {float:left;background:url('/bitrix/templates/lawyers/i/header-nav.png') no-repeat 100% 0;}
+		.header nav li {float:left;background:url('/images/header-nav.png') no-repeat 100% 0;}
 			.header nav a {color:#fff;display:block;padding:0 15px;}
 			.header nav a:hover {text-decoration:underline;background:#9b000f;margin-left:-1px;padding-left:16px;}
 			.header nav li.current a {text-decoration:none;background:#9b000f;margin-left:-1px;padding-left:16px;}
-			
-/* Promo */
-.promo {margin:0 0 30px;position:relative;height:240px;background:url('/bitrix/templates/lawyers/i/promo.png') no-repeat 100% 0;}
-	ul.previews {position:absolute;top:0;left:0;width:420px;height:240px;overflow:hidden;}
-		ul.previews li {width:420px;height:240px;position:relative;}
-			ul.previews .info {position:absolute;bottom:8px;left:0;right:0;background:rgba(0,0,0,0.7);padding:8px 12px;font:12px/16px Arial, Helvetica, sans-serif;color:#fff;}
-			.no-rgba ul.previews .info {background:url('/bitrix/templates/lawyers/i/promo-previews-bg.png');}
-				ul.previews .caption {font:18px Arial, Helvetica, sans-serif;margin:0 0 6px;}
-				ul.previews a {color:#c0c0c0;}
-	ul.thumbs {position:absolute;top:0;right:0;width:330px;overflow:hidden;height:240px;}
-		ul.thumbs li {padding:8px 10px 0 82px;margin:0 0 0 30px;height:72px;cursor:pointer;}
-		ul.thumbs li.selected {padding:8px 10px 0 112px;margin:0;cursor:default;background:url('/bitrix/templates/lawyers/i/thumbs-selected.png') no-repeat 0 0;color:#fff;}
-			ul.thumbs .caption {font:bold 16px/16px Arial, Helvetica, sans-serif;}
-			ul.thumbs img {float:left;margin:2px 0 0 -69px;}
-	.promo .arrow {position:absolute;width:116px;height:13px;background-image:url('/bitrix/templates/lawyers/i/arrows.png');right:92px;cursor:pointer;-moz-transition:opacity .3s ease;-webkit-transition:opacity .3s ease;-o-transition:opacity .3s ease;-ms-transition:opacity .3s ease;transition:opacity .3s ease;}
-	.promo .arrow:hover {opacity:.3;}
-	.promo .arrow.disabled {visibility:hidden;}
-	.promo .arrow.prev {background-position:0 0;top:-16px;}
-	.promo .arrow.next {background-position:0 100%;bottom:-16px;}
 	
-/* Sidebar */
-.sidebar {float:left;width:223px;padding:0 0 20px 12px;}
-	.search {background:url('/bitrix/templates/lawyers/i/search.png') no-repeat 0 0;height:25px;width:223px;margin:0 0 24px;position:relative;}
-		.search input[type="submit"] {width:25px;height:25px;border:0;cursor:pointer;display:block;overflow:hidden;text-indent:-10000px;background:url('/bitrix/templates/lawyers_ria/i/search-button.png') no-repeat 3px 5px;position:absolute;top:0;right:0;margin:0;outline:none;}
-		.search input[type="text"] {color:#807f7f;font:13px Arial, Helvetica, sans-serif;padding:5px 12px 4px;width:184px;border:0;background:none;position:absolute;top:0;left:0;margin:0;outline:none;}
-	.sidebar nav {margin:0 0 30px;}
-		.sidebar nav li {margin:0 0 8px;}
-		.sidebar nav>ul>li>a {font:18px Arial, Helvetica, sans-serif;padding:2px 8px 2px 18px;display:block;}
-		.sidebar nav>ul>li.current>a {background:#78000c;color:#fff;text-decoration:none;}
-			.sidebar nav ul ul {margin:8px 8px 0 18px;}
-				.sidebar nav ul ul a {color:#404040;}
-				.sidebar nav ul ul li.current a {font-weight:bold;}
-	.vote {margin:0 0 30px 18px;}
-		.vote .title {color:#788400;font:20px/24px Arial, Helvetica, sans-serif;margin:0 0 12px;}
-		.vote ul {margin:0 0 16px;}
-		.vote li {margin:0 0 12px;}
-		.lt-ie8 .vote li {zoom:1;}
-			.vote input[type="radio"] {opacity:0;float:left;width:18px;}
-			.vote label {display:block;padding:0 0 0 24px;font:16px/24px Arial, Helvetica, sans-serif;cursor:pointer;background:url('/bitrix/templates/lawyers/i/radio.png') no-repeat 0 3px;position:relative;}
-			.lt-ie9 .vote label {background:none;}
-			.vote input[type='radio']:checked + label {background-image:url('/bitrix/templates/lawyers/i/radio-checked.png');}
-			.vote label:hover {color:#000;}
-			.vote p {margin:0 0 0 24px;}
-			.vote button {background:#b0d602 url('/bitrix/templates/lawyers/i/button.png') repeat-x 0 0;height:24px;cursor:pointer;border:0;overflow:visible;margin:0;outline:none;border-radius:2px;font:13px Arial, Helvetica, sans-serif;color:#fff;padding:0 12px;box-shadow:inset 0 -1px 1px rgba(0,0,0,0.25);text-shadow:0 1px 1px rgba(32,59,0,0.4);}
-			
 /* Content */
 .content {float:left;width:900px;padding:0 35px 20px 50px;font:13px Arial, Helvetica, sans-serif;}
 .content div {text-align: justify;}
@@ -113,36 +69,16 @@ a.orderLink:hover{background:#9b000f;}
 			ul.gallery a {display:block;position:relative;margin:0 0 5px;}
 				ul.gallery img {vertical-align:top;border:1px solid #c7c7c7;max-width:102px;padding:3px;}
 				ul.gallery a:hover img {border-color:#999;}
-				ul.gallery .zoom {position:absolute;bottom:1px;right:1px;background:url('/bitrix/templates/lawyers/i/zoom.png') no-repeat 0 0;width:16px;height:16px;overflow:hidden;text-indent:-10000px;}
+				ul.gallery .zoom {position:absolute;bottom:1px;right:1px;background:url('/images/zoom.png') no-repeat 0 0;width:16px;height:16px;overflow:hidden;text-indent:-10000px;}
 .content table#cities a {border: 2px solid transparent;}
 .content table#cities a:hover {font-size: 25px;font-weight:bold; color: #fe6502 !important }
 /*	table.files {border:0;border-bottom:2px solid #eff0f0;border-collapse:collapse;border-spacing:0;}*/
 	
-/* News */
-.news {float:left;width:215px;padding:0 0 20px 0;}
-.inner .news {width:auto; float:none;}
-	.news .caption {color:#788400;font:20px Arial, Helvetica, sans-serif;margin:0 0 12px;}
-	.news article {font:13px/18px Arial, Helvetica, sans-serif;padding:0 0 13px;margin:0 0 12px;background:url('/bitrix/templates/lawyers_ria/i/news.png') no-repeat 0 100%;}
-		.news time {color:#c0c0c0;font:11px Arial, Helvetica, sans-serif;display:block;}
-		.time {color:#c0c0c0;font:11px Arial;display:block;}
-		.news article a {color:#000000;}
-	.news .more {text-align:right;}
-		.news .more a {padding:0 10px 0 0;background:url('/bitrix/templates/lawyers/i/news-more.png') no-repeat 100% 5px;}
-		
-/* Reviews */
-.reviews {clear:both;background:url('/bitrix/templates/lawyers/i/quote.png') no-repeat 0 65px;margin:0 0 0 -25px;padding:0 0 20px 20px;font:13px Arial, Helvetica, sans-serif;}
-.reviews:after {clear:both;content:'';display:block;}
-.lt-ie8 .reviews {zoom:1;}
-	.reviews .caption {color:#b8c43e;font:italic 24px Arial, Helvetica, sans-serif;margin:0 0 10px;text-indent:-90px;padding:0 0 0 95px;}
-	.reviews article {float:left;width:215px;margin:0 35px 20px 5px;}
-	.reviews article.last {margin:0 0 20px 0;}
-		.reviews .author {color:#c0c0c0;margin:10px 0 0;font:13px/14px Arial, Helvetica, sans-serif;}
-
 /* Footer */
 .footer {background:#b84d08;position:relative;min-width:1000px;color:#000;font:13px/18px Arial, Helvetica, sans-serif;}
 	.footer .bgRight {background:#fea202;position:absolute;top:0;right:0;bottom:0;left:50%;}
-	.footerIn {background:url('/bitrix/templates/lawyers/i/bg-middle.png') repeat-y 50% 0;position:relative;}
-	.footerIn .footerIn {width:1000px;background:#feba02 url('/bitrix/templates/lawyers/i/footer.png') repeat-y 50% 0;padding:12px 0 20px;margin:0 auto;}
+	.footerIn {background:url('/images/bg-middle.png') repeat-y 50% 0;position:relative;}
+	.footerIn .footerIn {width:1000px;background:#feba02 url('/images/footer.png') repeat-y 50% 0;padding:12px 0 20px;margin:0 auto;}
 	.footerIn .footerIn:after {clear:both;content:'';display:block;}
 	.lt-ie8 .footerIn .footerIn {zoom:1;}
 		.copy {float:left;padding:0 2px 0 260px;width:210px;}

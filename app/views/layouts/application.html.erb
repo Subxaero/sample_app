@@ -8,6 +8,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="wrapper">
 <header class="header">
 	<a href="/vik"><span class="logo">Вик-Медиа</span></a>
 <div class="tel"> задайте свой вопрос по телефону<br /><span>8-800<span> 100-17-44</span></span></div>
@@ -15,21 +16,36 @@
 	<span><a href="./contacts.php" style="text-decoration: none; color: #9b000f !important;" >Москва<br />пер. Старопименовский, д. 11/6 стр. 3</a></span>
 </div>
 <a href="../feedback/" class="orderLink fancybox.ajax" >&nbsp;&nbsp;Напишите нам&nbsp;&nbsp;</a>
+<nav>
+	<ul>
+			<li class="current"><a href="/index">Главная</a></li>
+			<li ><a href="/main">О компании</a></li>
+			<li ><a href="/estrabota">Есть Работа!</a></li>
+			<li ><a href="/metro">METRO</a></li>
+			<li ><a href="/mebelinterior">Мебель&Интерьер</a></li>
+			<li ><a href="/investtowest">Invest to West</a></li>
+			<li ><a href="/property">Собственность</a></li>
+		</ul>
+</nav>
 </header>
 <section class="content">
 	<%= yield %>
 </section>
+</div>
 <footer class="footer">
+	<div class="bgRight"></div>
 	<div class="footerIn">
-		<div class="copy">
-			<p>&copy; ООО Холдинг "Вик-Медиа"</p>
- 			<p>1995-2014</p>
- 		</div>
- 		<div class="adr">
-			Россия, г. Москва, <br/>пер. Старопименовский д. 11/6
-		</div>
-		<div class="counters">
-			WEB подразделение<br />ООО Холдинга &quot;Вик-Медиа&quot;
+		<div class="footerIn">
+			<div class="copy">
+				<p>&copy; ООО Холдинг "Вик-Медиа"</p>
+ 				<p>1995-2014</p>
+ 			</div>
+ 			<div class="adr">
+				Россия, г. Москва, <br/>пер. Старопименовский д. 11/6
+			</div>
+			<div class="counters">
+				WEB подразделение<br />ООО Холдинга &quot;Вик-Медиа&quot;
+			</div>
 		</div>
 	</div>
 </footer>
